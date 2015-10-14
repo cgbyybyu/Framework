@@ -1,0 +1,143 @@
+﻿<project name="ToolsQA Store" basedir="." default="usage">
+
+	<description>
+    This buildfile is used to build the Foo subproject within
+    the large, complex Bar project.
+  </description>
+
+	<property environment="env" />
+
+	<property name="ws.home" value="${basedir}" />
+	<property name="ws.jars" value="${ws.home}\libs" />
+
+	<property name="test.dest" value="${ws.home}\build" />
+	<property name="test.src" value="${ws.home}\src" />
+	<property name="ng.result" value="test-output" />
+
+
+	<!-- properties for copying the results -->
+	<tstamp>
+		<format property="year" pattern="yyyy" />
+		<format property="DSTAMP" pattern="yyyy-MM-dd" />
+		<format property="TSTAMP" pattern="HH:mm:ss" />
+		<format property="dateversion" pattern="yyyy.MM.dd.HH:mm:ss" />
+		<format property="time.stamp" pattern="yyyy-MM-dd_HH-mm-ss aa_" />
+	</tstamp>
+
+	<property name="testng.report.dir" value="${ws.home}/testngReports/${time.stamp}" />
+	<property name="testngXslt.report.dir" value="${ws.home}/testngXsltReports/${time.stamp}" />
+
+	<!-- ====== For setting the classpath ==== -->
+	<target name="setClassPath" unless="test.classpath">
+		<echo message="Setting classpath" />
+		<path id="classpath_jars">
+			<fileset dir="${ws.jars}" includes="*.jar" />
+		</path>
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+
+	</target>
+
+	<!-- ============ Initializing other stuff =========== -->
+	<target name="init" depends="setClassPath">
+		<echo message="Initializing..." />
+		<tstamp>
+			<format property="start.time" pattern="MM-dd-yyyy (HH-mm-ss)" />
+		</tstamp>
+		<condition property="ANT" value="$(env.ANT_HOME)\bin\ant.bat" else="$(env.ANT_HOME)\bin\ant">
+			<!-- os family="mac" /-->
+			<os family="windows" />
+		</condition>
+
+		<taskdef name="testng" classname="org.testng.TestNGAntTask">
+			<classpath>
+				<pathelement location="${ws.jars}/testng-6.8.5.jar" />
+			</classpath>
+		</taskdef>
+
+		<!--
+	 <!- use direct path for classpath if you don't prefer to use 'lib' directory: classpath="/Users/yash/Documents/Jar Files/testng-6.8.jar" ->
+	 <taskdef name="testng" classname="org.testng.TestNGAntTask">
+	 <classpath>
+	 <pathelement location="./lib/testng.jar"/>
+	 </classpath>
+	 </taskdef>
+	 -->
+
+	</target>
+
+	<target name="all">
+	</target>
+
+	<target name="usage">
+		<echo message="" />
+		<echo message="'ant run' will run all test cases" />
+		<echo message="" />
+	</target>
+
+	<!-- cleaning the destination folders -->
+	<target name="clean">
+		<echo message="deleting directory: '${test.dest}'" />
+		<delete dir="${test.dest}" />
+	</target>
+
+
+	<target name="compile" depends="init, clean">
+		<delete includeemptydirs="true" quiet="true">
+			<fileset dir="${test.dest}" includes="**/*" />
+		</delete>
+		<echo message="making directory....." />
+		<mkdir dir="${test.dest}" />
+		<echo message="classpath-------: ${test.classpath}" />
+		<echo message="compiling....." />
+		<javac debug="true" destdir="${test.dest}" srcdir="${test.src}" classpath="${test.classpath}" includeantruntime="true" />
+	</target>
+
+	<target name="run" depends="compile">
+		<testng classpath="${test.classpath}:${test.dest}" suitename="Test Suite">
+			<xmlfileset dir="${ws.home}" includes="TestNGSuit.xml" />
+		</testng>
+	</target>
+
+	<property name="LIB" value="${ws.jars}" />
+	<property name="BIN" value="${test.dest}" />
+	<path id="master-classpath">
+		<pathelement location="${BIN}" />
+		<fileset dir="${LIB}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="xsltReport">
+		<delete dir="${basedir}/testng-xslt">
+		</delete>
+		<mkdir dir="${basedir}/testng-xslt">
+		</mkdir>
+		<xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html">
+			<param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+
+			<param expression="true" name="testNgXslt.sortTestCaseLinks" />
+
+			<param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+
+			<param expression="true" name="testNgXslt.showRuntimeTotals" />
+
+			<classpath refid="master-classpath">
+			</classpath>
+		</xslt>
+	</target>
+
+	<target name="sendMail">
+		<zip destfile="${basedir}/testng-xslt/Report.zip" basedir="${basedir}/testng-xslt" />
+		<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="TOOLSQA Test Pass Done" user="sandeep.sajiru@gmail.com" password="******">
+			<from address="sandeep.sajiru@gmail.com" />
+			<to address="sandeep.sajiru@gmail.com" />
+			<message>ToolsQA Test Pass Completed. A details report of this run is attached as zip file.</message>
+			<attachments>
+				<fileset dir="${basedir}/testng-xslt">
+					<include name="**/*.zip" />
+				</fileset>
+			</attachments>
+		</mail>
+	</target>
+
+</project>

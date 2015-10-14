@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="13" passed="13">
+  <reporter-output>
+    <line>
+      <![CDATA[This is log from my test]]>
+    </line>
+  </reporter-output>
+  <suite name="Framework" duration-ms="92" started-at="2015-10-14T04:05:25Z" finished-at="2015-10-14T04:05:25Z">
+    <groups>
+    </groups>
+    <test name="Sandeep" duration-ms="26" started-at="2015-10-14T04:05:25Z" finished-at="2015-10-14T04:05:25Z">
+      <class name="com.toolsqa.framework.tests.TestNG_003">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="beforeMethod" is-config="true" duration-ms="8" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="run1()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="run1" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="run3()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="run3" duration-ms="2" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[This is log from my test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateDiscountText()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1ae369b7]" name="validateDiscountText" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDiscountText -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_003 -->
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@2aaf7cc2]" name="run" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@2aaf7cc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@2aaf7cc2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+    </test> <!-- Sandeep -->
+    <test name="Gaurav" duration-ms="3" started-at="2015-10-14T04:05:25Z" finished-at="2015-10-14T04:05:25Z">
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4cdbe50f]" name="run" duration-ms="1" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+      <class name="com.toolsqa.framework.tests.TestNG_001">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@45c8e616]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRun1()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@45c8e616]" name="testRun1" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@45c8e616]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testRun2()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@45c8e616]" name="testRun2" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@45c8e616]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@45c8e616]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
+    </test> <!-- Gaurav -->
+    <test name="Raluca" duration-ms="2" started-at="2015-10-14T04:05:25Z" finished-at="2015-10-14T04:05:25Z">
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@c818063]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@c818063]" name="run" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@c818063]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+      <class name="com.toolsqa.framework.tests.TestNG_001">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2ff4f00f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2ff4f00f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testRun1()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2ff4f00f]" name="testRun1" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2ff4f00f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRun2()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2ff4f00f]" name="testRun2" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2ff4f00f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
+    </test> <!-- Raluca -->
+    <test name="Patricia" duration-ms="4" started-at="2015-10-14T04:05:25Z" finished-at="2015-10-14T04:05:25Z">
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@5a39699c]" name="run" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@5a39699c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@5a39699c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+      <class name="com.toolsqa.framework.tests.TestNG_001">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRun1()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2c8d66b2]" name="testRun1" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testRun2()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2c8d66b2]" name="testRun2" duration-ms="1" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-13T21:05:25Z" finished-at="2015-10-13T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
+    </test> <!-- Patricia -->
+  </suite> <!-- Framework -->
+</testng-results>
