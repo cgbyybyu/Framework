@@ -128,7 +128,7 @@
 
 	<target name="sendMail">
 		<zip destfile="${basedir}/testng-xslt/Report.zip" basedir="${basedir}/testng-xslt" />
-		<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="TOOLSQA Test Pass Done" user="sandeep.sajiru@gmail.com" password="******">
+		<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="TOOLSQA Test Pass Done" user="serghei.mardar@gmail.com" password="hondacivic">
 			<from address="serghei.mardar@gmail.com" />
 			<to address="serghei.mardar@gmail.com" />
 			<message>ToolsQA Test Pass Completed. A details report of this run is attached as zip file.</message>
