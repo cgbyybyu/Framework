@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Framework">
-	<test verbose="2" name="Sandeep">
+	<test verbose="2" name="Serghei">
 		<classes>
 			<class name="com.toolsqa.framework.tests.TestNG_003" />
 			<class name="com.toolsqa.framework.tests.TestNG_002" />
@@ -10,7 +10,7 @@
 	
 		
 		
-		<test verbose="2" name="Patricia">
+		<test verbose="2" name="Ruchita">
 		<classes>
 			<class name="com.toolsqa.framework.tests.TestNG_001" />
 			<class name="com.toolsqa.framework.tests.TestNG_002" />
