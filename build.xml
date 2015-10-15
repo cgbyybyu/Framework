@@ -1,4 +1,4 @@
-﻿<project name="ToolsQA Store" basedir="." default="usage">
+﻿<project name="Framework" basedir="." default="usage">
 
 	<description>
     This buildfile is used to build the Foo subproject within
@@ -127,17 +127,17 @@
 	</target>
 
 	<target name="sendMail">
-		<zip destfile="${basedir}/testng-xslt/Report.zip" basedir="${basedir}/testng-xslt" />
-		<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="TOOLSQA Test Pass Done" user="serghei.mardar@gmail.com" password="hondacivic">
+		<zip destfile="${basedir}/Report.zip" basedir="${basedir}/testng-xslt"/>
+		<email enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="TOOLSQA Test Pass Done" user="serghei.mardar@gmail.com" password="hondacivic">
 			<from address="serghei.mardar@gmail.com" />
 			<to address="serghei.mardar@gmail.com" />
 			<message>ToolsQA Test Pass Completed. A details report of this run is attached as zip file.</message>
 			<attachments>
-				<fileset dir="${basedir}/testng-xslt">
-					<include name="**/*.zip" />
+				<fileset dir="${basedir}/" >
+					<include name="Report.zip" />
 				</fileset>
 			</attachments>
-		</mail>
+		</email>
 	</target>
 
 </project>
