@@ -133,7 +133,7 @@
 
 	<target name="sendMail" depends="xsltReport">
 			<zip destfile="${basedir}/Report.zip" basedir="${basedir}/testng-xslt" />
-			<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="TOOLSQA Test Pass Done" user="serghei.mardar@gmail.com" password="hondacivic">
+			<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="Framework Test Done" user="serghei.mardar@gmail.com" password="hondacivic">
 				<from address="serghei.mardar@gmail.com" />
 				<to address="serghei.mardar@gmail.com" />
 				<cc address="cgbyybyu@rambler.ru"/>
