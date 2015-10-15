@@ -137,7 +137,7 @@
 				<from address="serghei.mardar@gmail.com" />
 				<to address="serghei.mardar@gmail.com" />
 				<cc address="cgbyybyu@rambler.ru"/>
-				<message>ToolsQA Test Pass Completed. A details report of this run is attached as zip file.</message>
+				<message>Framework Test Completed. A details report of this run is attached as zip file.</message>
 				<attachments>
 					<fileset dir="${basedir}">
 						<include name="**/*.zip" />
