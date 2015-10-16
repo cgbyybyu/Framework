@@ -107,7 +107,7 @@
 		</fileset>
 	</path>
 
-	<target name="xsltReport" depends="run">
+	<target name="xsltReport" >
 		<delete dir="${basedir}/testng-xslt">
 		</delete>
 		<mkdir dir="${basedir}/testng-xslt">
@@ -131,7 +131,7 @@
 			        <get dest="C:/Users/User/Serj/apache-ant-1.9.6/lib/activation.jar" src="http://search.maven.org/remotecontent?filepath=javax/activation/activation/1.1/activation-1.1.jar"/>
 			    </target>
 
-	<target name="sendMail" depends="xsltReport">
+	<target name="sendMail" depends="run">
 			<zip destfile="${basedir}/Report.zip" basedir="${basedir}/testng-xslt" />
 			<mail enableStartTLS="true" ssl="true" mailhost="smtp.gmail.com" mailport="465" subject="Framework Test Done" user="serghei.mardar@gmail.com" password="hondacivic">
 				<from address="serghei.mardar@gmail.com" />
@@ -139,8 +139,8 @@
 				<cc address="cgbyybyu@rambler.ru"/>
 				<message>Framework Test Completed. A details report of this run is attached as zip file.</message>
 				<attachments>
-					<fileset dir="${basedir}">
-						<include name="**/*.zip" />
+					<fileset dir="${basedir}/test-output">
+						<include name="index.html" />
 					</fileset>
 				</attachments>
 			</mail>
