@@ -14,7 +14,7 @@ public class TestNGBase {
 	  @BeforeMethod
 	  public void beforeMethod() {
 		  System.out.println("beforeMethod ");
-		  GlobalConstants.currentBrowserToRunWith = "chrome";
+		  GlobalConstants.currentBrowserToRunWith = "firefox";
 		  GlobalConstants.currentDriver = GlobalConstants.getWebDriver(
 					GlobalConstants.currentBrowserToRunWith);
 		  
