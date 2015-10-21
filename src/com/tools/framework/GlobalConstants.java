@@ -21,7 +21,7 @@ public class GlobalConstants {
 	// value of
 	// 10sec
 
-public static final String VALID_USERNAME = "cgbyyb@rambler.ru";
+public static final String VALID_USERNAME = "cgbyybyu@rambler.ru";
 public static final String VALID_PASSWORD = "17grenoble";
 public static final String INVALID_PASSWORD1 = "asdfgh12";
 public static final String INVALID_PASSWORD2 = "qwe2";
