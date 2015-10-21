@@ -36,12 +36,12 @@ public class SignUpValidUsingFramework extends TestNGBase{
 		nloginp.clickSignupButton();
 		 nloginp.openHomePage();
 		nlp.clickStartread();
-		 nlp.helmetSign();
+		nlp.helmetSign();
 		aw.clickLogout();
 
 
 
-			TextWriter.writer(GlobalConstants.TC_NUMBER1_RESULT + " PASSED");
+			//TextWriter.writer(GlobalConstants.TC_NUMBER1_RESULT + " PASSED");
 		
 		
 	}

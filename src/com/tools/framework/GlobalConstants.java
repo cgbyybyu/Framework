@@ -51,6 +51,7 @@ public static final String NEWS360_DELETEACCAUNT_BUTTON = "/html/body/div[2]/div
 public static final String NEWS360_DELACCAUNT_BUTTON = "/html/body/div[2]/div/div[3]/div[5]/div/div[2]";
 public static final String NEWS360_DELACCAUNT_BUTTON2 = "/html/body/div[2]/div/div[3]/div[6]/div[2]/div[2]";
 public static final String NEWS360_STARTREAD_BUTTON = "/html/body/div[1]/div/div[2]";
+                                                       
 public static final String NEWS360_ACCAUNTWINDOW_PASSWORDFIELD = "/html/body/div[2]/div/div[3]/div[6]/div[1]/input";
 public static final String NEWS360_SHOWMOREPOPULAR_BUTTON = "/html/body/div[2]/div[1]/div[1]/div[1]/div[2]";
 
