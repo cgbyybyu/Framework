@@ -1,25 +1,30 @@
 package com.tools.framework.tests;
 
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+
 import com.tools.framework.GlobalConstants;
 import com.tools.framework.logger.Logger;
+
+
 
 public class TestNGBase {
 
 	  @BeforeMethod
 	  public void beforeMethod() {
 		  System.out.println("beforeMethod ");
+		  GlobalConstants.currentBrowserToRunWith = "chrome";
+		  GlobalConstants.currentDriver = GlobalConstants.getWebDriver(
+					GlobalConstants.currentBrowserToRunWith);
+		  
 	  }
 
 	  @AfterMethod
-	  public void afterMethod(ITestResult result) {
+	  public void afterMethod() {
 		  System.out.println("afterMethod");
-		  if(ITestResult.FAILURE==result.getStatus())
-		  {
-		  Logger.logScreenShot(GlobalConstants.currentDriver, result.getTestName());
-		  }
+		  Logger.logInfo("Inside Test Cleanup");
+			GlobalConstants.currentDriver.quit();	
+		 
 	  }
 }

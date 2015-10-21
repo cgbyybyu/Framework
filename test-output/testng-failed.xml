@@ -1,38 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Framework]">
-  <test name="Sandeep(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.toolsqa.framework.tests.TestNG_002">
+      <class name="com.tools.framework.tests.SignUpValidUsingFramework">
         <methods>
           <include name="beforeMethod"/>
-          <include name="beforeMethod"/>
-          <include name="beforeMethod"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="afterMethod"/>
-          <include name="afterMethod"/>
+          <include name="run"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
-      <class name="com.toolsqa.framework.tests.TestNG_001">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeMethod"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="afterMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
-      <class name="com.toolsqa.framework.tests.TestNG_003">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="run3"/>
-          <include name="validateDiscountText"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.toolsqa.framework.tests.TestNG_003 -->
+      </class> <!-- com.tools.framework.tests.SignUpValidUsingFramework -->
     </classes>
-  </test> <!-- Sandeep(failed) -->
-</suite> <!-- Failed suite [Framework] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
